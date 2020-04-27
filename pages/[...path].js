@@ -12,7 +12,7 @@ export default (props) => {
 };
 
 export const getServerSideProps = ({ req, res, ...rest }, next) => {
-  console.log(rest);
+  console.log(req.url, rest);
   return {
     props: {
       data: 2,
